@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font: normal 20pt arial;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //Tratamento de strings
+      var nome = prompt('Qual é o seu nome?');
+      document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras<br>`); //length diz a quantidade de letras
+      document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`); //toUpperCase coloca todas as letras na forma maiúscula
+      document.write(`Seu nome em minúsculos ${nome.toLowerCase()}`); //toLowerCase coloca todas as letras na forma minúscula
+
+      //Tratamento de números
+      var n1 = 1545.5;
+      alert(n1.toFixed(2)); //toFixed permite escolher o número de casas decimais depois da virgula
+      alert(n1.toFixed(2).replace('.', ',')); //Replace permite substituir uma parte do número por outra
+      alert(n1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+      alert(n1.toLocaleString('pt-BR', { style: 'currency', currency: 'USD' }));
+      alert(n1.toLocaleString('pt-BR', { style: 'currency', currency: 'EUR' }));
+    </script>
+  </body>
+</html>
