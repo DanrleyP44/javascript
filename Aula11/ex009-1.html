@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, stranger</title>
+  </head>
+  <body>
+    <h1>Verifica se é estrangeiro</h1>
+
+    <label for="inac">País de origem: </label>
+    <input type="text" name="nac" id="inac" />
+    <input type="button" value="Verificar" onclick="verificar()" />
+
+    <p id="resposta"></p>
+
+    <script>
+      function verificar() {
+        let nacionalidade = document.getElementById('inac');
+        let para = document.getElementById('resposta');
+        let pais = nacionalidade.value;
+
+        if (pais == 'Brasil') {
+          para.innerHTML = 'Você é brasileiro';
+        } else {
+          para.innerHTML = 'Você é estrangeiro';
+        }
+      }
+    </script>
+  </body>
+</html>
