@@ -29,3 +29,14 @@ footer {
   font-style: italic;
   padding: 20px;
 }
+
+div {
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
